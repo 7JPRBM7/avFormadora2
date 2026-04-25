@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Color Change
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <ion-list>
+    <ion-item lines="none">
+      <ion-label color="danger"><strong>R</strong></ion-label>
+      <ion-range color="danger"></ion-range>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label color="success"><strong>G</strong></ion-label>
+      <ion-range color="success"></ion-range>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label color="tertiary"><strong>B</strong></ion-label>
+      <ion-range color="tertiary"></ion-range>
+    </ion-item>
+
+    <div class="ion-text-center">
+      <ion-button expand="block" shape="round">
+        1
+      </ion-button>
+
+      <ion-button expand="block" shape="round">
+        2
+      </ion-button>
+    </div>
+  </ion-list>
+
+  <ion-button expand="block" class="ion-margin" routerLink="/home">
+    Cartão de Identificação
+  </ion-button>
+</ion-content>
