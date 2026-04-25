@@ -1,0 +1,7 @@
+{
+  "name": "colorChange",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
