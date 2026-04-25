@@ -18,6 +18,7 @@ export class MudarCorPage implements OnInit {
   azul: number = 0;
 
   corBotao1: string = 'rgb(255, 102, 0)';
+  corFundo: string = '';
 
   constructor() { }
 
@@ -27,6 +28,11 @@ export class MudarCorPage implements OnInit {
   mudarCorBotao1() {
     this.corBotao1 = `rgb(${this.vermelho}, ${this.verde}, ${this.azul})`;
     console.log("A cor gerada foi: ", this.corBotao1);
-  }
+  };
+
+  mudarCorFundo() {
+    this.corFundo = `rgb(${this.vermelho}, ${this.verde}, ${this.azul})`;
+    console.log("A cor de fundo gerada foi: ", this.corFundo);
+  };
 
 }

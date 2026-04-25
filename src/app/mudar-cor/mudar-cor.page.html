@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding" [ngStyle]="{'--background': corFundo}">
   
   <ion-list>
     <ion-item lines="none">
@@ -31,7 +31,7 @@
         1
       </ion-button>
 
-      <ion-button expand="block" shape="round">
+      <ion-button expand="block" shape="round" (click)="mudarCorFundo()">
         2
       </ion-button>
     </div>
