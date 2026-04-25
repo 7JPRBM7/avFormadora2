@@ -13,9 +13,20 @@ import { RouterLink} from '@angular/router'
 })
 export class MudarCorPage implements OnInit {
 
+  vermelho: number = 0;
+  verde: number = 0;
+  azul: number = 0;
+
+  corBotao1: string = 'rgb(255, 102, 0)';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  mudarCorBotao1() {
+    this.corBotao1 = `rgb(${this.vermelho}, ${this.verde}, ${this.azul})`;
+    console.log("A cor gerada foi: ", this.corBotao1);
   }
 
 }
