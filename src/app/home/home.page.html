@@ -1,20 +1,39 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Cartão de Identificação Unisuam
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <img alt="fotoPerfil" src="assets/minhaFoto.png">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-header>
+      <ion-card-title>João Pedro Rangel</ion-card-title>
+      <ion-card-subtitle>Análise e Desenvolvimento de Sistemas</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-row class="ion-align-items-center">
+
+        <ion-col>
+          <p><strong>Turma:</strong> ADS0301M</p>
+          <p><strong>Unidade:</strong> Bonsucesso</p>
+          <p><strong>Turno:</strong> Manhã</p>
+          <p><strong>Palavra-Chave:</strong> ?</p>
+        </ion-col>
+
+        <ion-col size="auto">
+          <img alt="Unisuam" src="assets/unisuamLogo.png" style="max-height: 50px;"/>
+        </ion-col>
+
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" class="ion-margin" routerLink="/mudarCor">
+    Mudar Cor
+  </ion-button>
 </ion-content>
