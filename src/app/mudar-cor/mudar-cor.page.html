@@ -26,16 +26,16 @@
 
     <div class="ion-text-center">
       <ion-button expand="block" shape="round" (click)="mudarCorBotao1()" [ngStyle]="{'--background': corBotao1}">
-        1
+        <span class="texto-destaque">1. Mudar cor deste botão</span>
       </ion-button>
 
       <ion-button expand="block" shape="round" (click)="mudarCorFundo()">
-        2
+        <span class="texto-destaque">2. Mudar cor de fundo</span>
       </ion-button>
     </div>
   </ion-list>
 
   <ion-button expand="block" class="ion-margin" routerLink="/home">
-    Cartão de Identificação
+    <span class="texto-destaque">Cartão de Identificação</span>
   </ion-button>
 </ion-content>
