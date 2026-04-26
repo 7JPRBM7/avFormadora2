@@ -10,21 +10,19 @@
   
   <ion-list>
     <ion-item lines="none">
-      <ion-label color="danger"><strong>R</strong></ion-label>
+      <ion-label color="danger"><strong>R</strong>: {{ vermelho }}</ion-label>
       <ion-range color="danger" min="0" max="255" [(ngModel)]="vermelho"></ion-range>
     </ion-item>
 
     <ion-item lines="none">
-      <ion-label color="success"><strong>G</strong></ion-label>
+      <ion-label color="success"><strong>G</strong>: {{ verde }}</ion-label>
       <ion-range color="success" min="0" max="255" [(ngModel)]="verde"></ion-range>
     </ion-item>
 
     <ion-item lines="none">
-      <ion-label color="tertiary"><strong>B</strong></ion-label>
+      <ion-label color="tertiary"><strong>B</strong>: {{ azul }}</ion-label>
       <ion-range color="tertiary" min="0" max="255" [(ngModel)]="azul"></ion-range>
     </ion-item>
-
-    <p>RGB atual: {{ vermelho }}, {{ verde }}, {{ azul }}</p>
 
     <div class="ion-text-center">
       <ion-button expand="block" shape="round" (click)="mudarCorBotao1()" [ngStyle]="{'--background': corBotao1}">

@@ -1,13 +1,14 @@
 ion-card {
   border-radius: 16px;
-  box-shadow: 0px 6px 15px rgba(0 ,0, 0, 1);
+  box-shadow: 0px 6px 15px rgba(0 ,0, 0, 5);
   margin-top: 20px;
 }
 
 ion-button {
   --border-radius: 16px;
   font-weight: bold;
-  --box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
+  --box-shadow: 0px 3px 7px rgba(0, 0, 0, 5);
+  margin-top: 20px;
 }
 
 ion-card-content p {
@@ -20,4 +21,20 @@ ion-card-subtitle {
 
 ion-card-content strong {
   color: #478FCA;
+}
+
+ion-list {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 20px 10px;
+  margin: 10px 0 30px 0;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+ion-item {
+  --background: transparent;
+}
+
+.ion-margin {
+  margin-top: 30px;
 }
